@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-familier: ;
+  --font-color: hsl(240, 9%, 89%);
+  --font-nav-color: hsl(240, 6%, 58%);
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--font-color);
+
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
