@@ -27,6 +27,10 @@ body {
   margin-inline: 7.2rem;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: var(--font-nav-color);
@@ -43,7 +47,7 @@ nav {
   align-items: center;
   gap: 5.3rem;
 
-  width: 128rem;
+  width: clamp(44rem, 200vw + 10rem, 128rem);
   height: 12.4rem;
 
   margin-bottom: 6.4rem;
@@ -61,7 +65,7 @@ nav .focus {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: clamp(1rem, 2vw + 2rem, 4.8rem);
   font-style: normal;
   font-weight: 700;
   line-height: 6rem;
@@ -69,7 +73,7 @@ h1 {
 
 p {
   width: 64.8rem;
-  font-size: 2.4rem;
+  font-size: clamp(1rem, 2vw + 1rem, 2.4rem);
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 28.8px */
