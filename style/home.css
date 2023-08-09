@@ -3,14 +3,14 @@
   text-align: center;
 }
 
-p {
+#home p {
   display: none;
 }
 
-div.home {
+#home div {
   margin-top: 10rem;
 }
 
-.home button {
+#home button {
   width: 20rem;
 }
