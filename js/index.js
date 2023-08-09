@@ -1,6 +1,5 @@
 import { Router } from "./router.js"
-import "./nav.js"
-import "./body.js"
+import "./changeCSS.js"
 
 const router = new Router()
 

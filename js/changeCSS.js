@@ -1,4 +1,6 @@
 const links = document.querySelectorAll("nav a")
+const body = document.querySelector("body")
+
 console.log(links)
 
 links.forEach(link => {
@@ -12,5 +14,10 @@ links.forEach(link => {
 
     link.style.fontWeight = "700"
     link.style.color = "#fff"
+
+    const pageId = link.getAttribute("href").substr(1)    
+    console.log(pageId)
+    body.id = pageId.length == 0 ? "home" : pageId
+    console.log(body)
   })
 })
