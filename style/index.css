@@ -7,7 +7,7 @@
 :root {
   font-size: 62.5%;
 
-  --font-familier: ;
+  --font-family: "Roboto", sans-serif;
   --font-color: hsl(240, 9%, 89%);
 
   --font-onblur-nav-color: hsl(240, 6%, 58%);
@@ -15,6 +15,7 @@
 }
 
 body {
+  font-family: var(--font-family);
   font-size: 1.6rem;
   color: var(--font-color);
 
@@ -22,6 +23,8 @@ body {
 
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  margin-inline: 7.2rem;
 }
 
 a {
@@ -40,19 +43,56 @@ nav {
   align-items: center;
   gap: 5.3rem;
 
-  margin-inline: 7.2rem;
+  width: 128rem;
+  height: 12.4rem;
+
+  margin-bottom: 6.4rem;
 
   color: var(--font-onblur-nav-color);
-  font-family: Roboto;
-  font-size: 21.667px;
+  font-size: 2.1rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 2.1rem; /* 100% */
 }
 
 nav .focus {
-  color: var(--font-onfocus-nav-color);
-  font-family: Roboto;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 2.1rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+p {
+  width: 64.8rem;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+
+  display: none;
+}
+
+h1,
+p {
+  margin: 1.6rem;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 0.2rem solid #fff;
+
+  color: var(--font-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 12px 32px;
 }
