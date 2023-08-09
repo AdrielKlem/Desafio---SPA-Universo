@@ -9,4 +9,7 @@ router.add(404, "/pages/404.html")
 
 router.handle();
 window.onpopstate = () => router.handle();
-window.route = () => router.route()
+const links = document.querySelectorAll("a");
+links.forEach(link => {
+  link.addEventListener("click", router.route.bind(router));
+});
