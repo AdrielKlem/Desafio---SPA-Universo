@@ -9,7 +9,9 @@
 
   --font-familier: ;
   --font-color: hsl(240, 9%, 89%);
-  --font-nav-color: hsl(240, 6%, 58%);
+
+  --font-onblur-nav-color: hsl(240, 6%, 58%);
+  --font-onfocus-nav-color: hsl(240, 9%, 89%);
 }
 
 body {
@@ -18,7 +20,6 @@ body {
 
   height: 100vh;
 
-  background-image: url(../assets/mountains-universe-1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -32,4 +33,26 @@ a {
 button {
   border: none;
   background: transparent;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5.3rem;
+
+  margin-inline: 7.2rem;
+
+  color: var(--font-onblur-nav-color);
+  font-family: Roboto;
+  font-size: 21.667px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+nav .focus {
+  color: var(--font-onfocus-nav-color);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.1rem;
 }
