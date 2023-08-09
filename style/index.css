@@ -17,8 +17,19 @@ body {
   color: var(--font-color);
 
   height: 100vh;
+
+  background-image: url(../assets/mountains-universe-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 a {
   text-decoration: none;
+  color: var(--font-nav-color);
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
 }
